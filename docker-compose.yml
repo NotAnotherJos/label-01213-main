@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  cpp-student:
+    build:
+      context: ./cpp-student
+      dockerfile: Dockerfile
+    container_name: student-management-system
+    # Enable interactive mode for console input/output
+    stdin_open: true
+    tty: true
+    restart: "no"
